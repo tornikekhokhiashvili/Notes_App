@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/noteListFragment"
-        android:name="com.example.notesapp.fragment.NoteListFragment"
+        android:name="com.example.notesapp.Presentation.fragment.Recycler.NoteListFragment"
         android:label="fragment_note_list"
         tools:layout="@layout/fragment_note_list">
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/addFragment"
-        android:name="com.example.notesapp.fragment.AddFragment"
+        android:name="com.example.notesapp.Presentation.fragment.AddFragment"
         android:label="fragment_add"
         tools:layout="@layout/fragment_add" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.notesapp.fragment.DetailFragment"
+        android:name="com.example.notesapp.Presentation.fragment.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" >
         <action
@@ -39,11 +39,11 @@
             app:destination="@id/noteListFragment" />
         <argument
             android:name="detailNote"
-            app:argType="com.example.notesapp.Note" />
+            app:argType="com.example.notesapp.Data.model.Note" />
     </fragment>
     <fragment
         android:id="@+id/editFragment"
-        android:name="com.example.notesapp.fragment.EditFragment"
+        android:name="com.example.notesapp.Presentation.fragment.EditFragment"
         android:label="fragment_edit"
         tools:layout="@layout/fragment_edit" >
         <action
@@ -51,6 +51,6 @@
             app:destination="@id/noteListFragment" />
         <argument
             android:name="editNote"
-            app:argType="com.example.notesapp.Note" />
+            app:argType="com.example.notesapp.Data.model.Note" />
     </fragment>
 </navigation>
